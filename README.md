@@ -1,6 +1,7 @@
 # product-preview-card-component
 
-screencapture-127-0-0-1-5502-index-html-2022-08-26-13_40_13.png
+![screencapture-127-0-0-1-5502-index-html-2022-08-26-13_40_13](https://user-images.githubusercontent.com/57639474/186924070-ef7b2ce0-8f18-45c4-a704-d29dd861e736.png)
+
 
 ## Welcome! 👋
 
