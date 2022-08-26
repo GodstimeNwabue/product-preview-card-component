@@ -1,0 +1,189 @@
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6.0rem;
+
+}
+
+.image-product-mobile {
+    display: none;
+}
+
+.image_box .image-product-desktop {
+    height: 70vh;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.text_box {
+    background-color: hsl(0, 0%, 100%);
+    padding: 0px 2.5rem;
+    height: 70vh;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.text_box h3 {
+    opacity: 0.5;
+}
+
+.text_box h2 {
+    font-size: 35px;
+}
+
+.text_box .hidden_desktop {
+    display: none;
+}
+
+.text_box p {
+    font-size: 21px;
+    line-height: 23px;
+    opacity: 0.7;
+}
+
+.text_box_number {
+    display: flex;
+    align-items: center;
+}
+
+.text_box_number p {
+    font-size: 30px;
+    font-weight: bolder;
+    color: hsl(158, 36%, 37%);
+    opacity: 1.0;
+}
+
+strike {
+    color: hsl(158, 36%, 37%);
+}
+
+.text_box_number h3 {
+    padding-left: 1.5rem;
+    color: hsl(158, 36%, 37%);
+    font-size: 20px; 
+}
+
+.text_box button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.text_box button p {
+    opacity: 1;
+}
+
+/* Mobile view responsiveness */
+@media (max-width: 600px) {
+    body {
+        padding: 0px 2px;
+    }
+
+    .box {
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .image_box {
+        margin-top: 1rem;
+    }
+
+    .image-product-mobile {
+        display: inline-block;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    
+    .image_box img {
+            width: 100%;
+        }
+
+    .image-product-desktop {
+        display: none;
+    }
+    
+    strike {
+        color: hsl(212, 21%, 14%);
+
+        }
+
+    .text_box {
+        width: 100%;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        height: 78vh;
+    }
+    
+    .text_box .hidden_desktop {
+        display: block;
+    }
+
+    .text_box .show_desktop {
+        display: none;
+    }
+
+    .text_box p {
+        font-size: 18px;
+    }
+
+    
+
+    /*
+    .text_box h2 {
+        width: 92%;
+    }
+    */
+}
+
+/*Tablet Responsiveness*/
+@media (min-width: 601px) {
+    .text_box p {
+        line-height: 18px;
+        font-size: 18px;
+    }
+
+    .text_box h2 {
+        font-size: 26px;
+    } 
+}
+
+@media (min-width: 705px) {
+    .text_box, .image_box .image-product-desktop {
+        height: 80vh;
+    }
+    
+    .text_box h2 {
+        font-size: 35px;
+    }
+
+    .text_box p {
+        font-size: 21px;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 1590px) {
+    .text_box, .image_box .image-product-desktop {
+        height: 70vh;
+    }
+}
