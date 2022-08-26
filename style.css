@@ -6,6 +6,9 @@
 
 body {
     background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box {
@@ -13,7 +16,6 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 6.0rem;
-
 }
 
 .image-product-mobile {
